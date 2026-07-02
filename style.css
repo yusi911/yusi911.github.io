@@ -1,0 +1,80 @@
+/* Ümumi Səhifə Ayarları (Açıq rəng rejimi) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    transition: background 0.4s, color 0.4s;
+}
+
+/* Gecə Rejimi üçün CSS Sinfi */
+body.dark-mode {
+    background-color: #1a1a2e;
+    color: #ffffff;
+}
+
+/* Tema Düyməsi */
+.theme-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+body.dark-mode .theme-btn {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Mərkəzi Kart */
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 300px;
+    transition: background 0.4s;
+}
+
+body.dark-mode .card {
+    background: #162447;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+/* Sayğac Rəqəmi */
+#counter-value {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #ff2e63;
+}
+
+/* Əsas Düymə */
+.main-btn {
+    background-color: #00adb5;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.main-btn:hover {
+    background-color: #007c82;
+    transform: scale(1.05);
+}
