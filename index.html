@@ -1,44 +1,60 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="az">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bağlar Market - Təzəlik və Keyfiyyət</title>
+    <title>Bağlar Market - Onlayn Kataloq və Tanıtım</title>
+    <!-- Müasir dizayn üçün Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans antialiased">
 
+    <!-- 1. ÜST NAVİQASİYA (HEADER) -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <div class="bg-green-600 text-white p-2 rounded-full shadow-md">
+            <!-- LOGO -->
+            <a href="#" class="flex items-center space-x-2">
+                <div class="bg-green-600 text-white p-2.5 rounded-full shadow-md">
                     <i class="fas fa-shopping-basket text-xl"></i>
                 </div>
-                <span class="text-2xl font-extrabold text-gray-900 tracking-tight">
-                    BAĞLAR<span class="text-green-600"> MARKET</span>
+                <span class="text-2xl font-black text-gray-900 tracking-tight">
+                    BAĞLAR<span class="text-green-600 font-bold">MARKET</span>
                 </span>
-            </div>
+            </a>
             
-            <a href="tel:+994506293295" class="hidden md:flex items-center space-x-2 bg-green-50 text-green-700 px-4 py-2 rounded-full border border-green-200 hover:bg-green-100 transition duration-300">
-                <i class="fas fa-phone-alt animate-pulse"></i>
-                <span class="font-semibold">050-629-3295</span>
+            <!-- MENYU (BÖLMƏLƏR) -->
+            <nav class="hidden lg:flex space-x-8 font-medium text-gray-600">
+                <a href="#kateqoriyalar" class="hover:text-green-600 transition">Kateqoriyalar</a>
+                <a href="#kampaniyalar" class="hover:text-green-600 transition">Kampaniyalar</a>
+                <a href="#haqqimizda" class="hover:text-green-600 transition">Haqqımızda</a>
+                <a href="#elaqe" class="hover:text-green-600 transition">İş Saatları & Ünvan</a>
+            </nav>
+            
+            <!-- ƏLAQƏ NÖMRƏSİ -->
+            <a href="tel:+994506293295" class="flex items-center space-x-2 bg-green-50 text-green-700 px-5 py-2.5 rounded-full border border-green-200 hover:bg-green-100 transition duration-300 shadow-sm">
+                <i class="fas fa-phone-alt animate-pulse text-sm"></i>
+                <span class="font-bold text-sm md:text-base">050-629-3295</span>
             </a>
         </div>
     </header>
 
-    <section class="relative bg-gradient-to-br from-green-900 to-green-700 text-white py-20 px-4 overflow-hidden">
-        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
-        <div class="container mx-auto max-w-4xl text-center relative z-10">
-            <span class="bg-green-500 text-white text-xs uppercase font-bold px-3 py-1 rounded-full tracking-widest mb-4 inline-block">Həmişə Təzə, Həmişə Sərfəli</span>
-            <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight">
-                Bağlar Marketə Xoş Gəlmisiniz!
+    <!-- 2. GİRİŞ HİSSƏSİ (HERO SECTION) -->
+    <section class="relative bg-gradient-to-br from-green-950 via-green-800 to-emerald-900 text-white py-24 px-4 overflow-hidden">
+        <div class="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/gplay.png')]"></div>
+        <div class="container mx-auto max-w-4xl text-center relative z-10 space-y-6">
+            <span class="bg-green-500/30 text-green-300 text-xs uppercase font-bold px-4 py-1.5 rounded-full tracking-widest inline-block border border-green-500/40">
+                Kənddən Evinizə — Həmişə Təzə
+            </span>
+            <h1 class="text-4xl md:text-6xl font-black leading-tight tracking-tight">
+                Süfrənizin Bərəkəti, <br><span class="text-amber-400">Bağlar Market!</span>
             </h1>
-            <p class="text-lg md:text-xl text-green-100 mb-8 max-w-2xl mx-auto leading-relaxed">
-                Niyə biz? Çünki biz <strong class="text-yellow-300 font-semibold">təzəliyin və keyfiyyətin</strong> tək ünvanıyıq! Hər gün ən təzə meyvə-tərəvəzlər, kənd məhsulları və gündəlik tələbat malları ilə xidmətinizdəyik. Gülərüz personalımız və cibinizə uyğun qiymətlərimizlə alış-verişi sizin üçün xoş xatirəyə çeviririk. Evinizə lazım olan hər şey — elə Bağlar Marketdə!
+            <!-- DƏYİŞDİRİLMİŞ TƏRİF MƏTNİ -->
+            <p class="text-base md:text-xl text-green-100 max-w-2xl mx-auto leading-relaxed opacity-90">
+                Biz sadəcə bir market deyilik, biz <strong class="text-white font-bold">təzəliyin, keyfiyyətin və səmimi xidmətin</strong> tək ünvanıyıq. Hər gün ən seçilmiş meyvə-tərəvəzlər, ləzzətli kolbasa və delikateslər, təbii süd məhsulları, eləcə də gündəlik tələbat malları ilə xidmətinizdəyik. Gülərüz heyətimiz və cibinizə uyğun qiymətlərimizlə alış-verişi daha sərfəli və xoş edirik!
             </p>
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href="tel:+994506293295" class="w-full sm:w-auto bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition duration-300 flex items-center justify-center space-x-3">
+            <div class="pt-4">
+                <a href="tel:+994506293295" class="inline-flex items-center space-x-3 bg-amber-400 hover:bg-amber-500 text-gray-950 font-black px-8 py-4 rounded-xl shadow-xl hover:shadow-amber-400/20 transform hover:-translate-y-0.5 transition duration-300 w-full sm:w-auto justify-center">
                     <i class="fas fa-phone-alt text-lg"></i>
                     <span>Zəng Edin / Sifariş Verin</span>
                 </a>
@@ -46,45 +62,167 @@
         </div>
     </section>
 
-    <section class="py-16 container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition">
-                <div class="text-green-600 text-4xl mb-4"><i class="fas fa-apple-alt"></i></div>
-                <h3 class="text-xl font-bold mb-2">100% Təzə Məhsullar</h3>
-                <p class="text-gray-600">Hər səhər rəflərimizə düzülən ən təbii və təravətli məhsullar.</p>
+    <!-- 3. MƏHSUL KATEQORİYALARI -->
+    <section id="kateqoriyalar" class="py-20 container mx-auto px-4">
+        <div class="text-center max-w-xl mx-auto mb-12 space-y-2">
+            <h2 class="text-3xl font-extrabold text-gray-900">Geniş Məhsul Çeşidimiz</h2>
+            <p class="text-gray-500 text-sm">Axtardığınız hər şey bir damın altında, rəflərimizdə sizi gözləyir.</p>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- Meyvə -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition group">
+                <div class="w-14 h-14 bg-red-50 text-red-500 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4 group-hover:scale-110 transition">
+                    <i class="fas fa-apple-alt"></i>
+                </div>
+                <h3 class="font-bold text-gray-900">Təzə Meyvə-Tərəvəz</h3>
+                <p class="text-xs text-gray-400 mt-1">Hər gün birbaşa bağlardan</p>
             </div>
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition">
-                <div class="text-green-600 text-4xl mb-4"><i class="fas fa-tags"></i></div>
-                <h3 class="text-xl font-bold mb-2">Sərfəli Qiymətlər</h3>
-                <p class="text-gray-600">Yüksək keyfiyyətli məhsulları hər büdcəyə uyğun qiymətlərlə təklif edirik.</p>
+            <!-- Süd -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition group">
+                <div class="w-14 h-14 bg-blue-50 text-blue-500 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4 group-hover:scale-110 transition">
+                    <i class="fas fa-cheese"></i>
+                </div>
+                <h3 class="font-bold text-gray-900">Süd və Ağartı</h3>
+                <p class="text-xs text-gray-400 mt-1">Təbii və qatqısız məhsullar</p>
             </div>
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition">
-                <div class="text-green-600 text-4xl mb-4"><i class="fas fa-heart"></i></div>
-                <h3 class="text-xl font-bold mb-2">Gülərüz Xidmət</h3>
-                <p class="text-gray-600">Sizə xidmət etməkdən zövq alan peşəkar və mehriban komanda.</p>
+            <!-- Un məmulatları -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition group">
+                <div class="w-14 h-14 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4 group-hover:scale-110 transition">
+                    <i class="fas fa-bread-slice"></i>
+                </div>
+                <h3 class="font-bold text-gray-900">Un Məmulatları</h3>
+                <p class="text-xs text-gray-400 mt-1">İsti və təravətli çörəklər</p>
+            </div>
+            <!-- Gündəlik -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition group">
+                <div class="w-14 h-14 bg-purple-50 text-purple-500 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4 group-hover:scale-110 transition">
+                    <i class="fas fa-box"></i>
+                </div>
+                <h3 class="font-bold text-gray-900">Quru Qidalar & Baqqal</h3>
+                <p class="text-xs text-gray-400 mt-1">Gündəlik bütün ehtiyaclar</p>
             </div>
         </div>
     </section>
 
-    <footer class="bg-gray-900 text-gray-400 py-12 mt-auto border-t-4 border-green-600">
-        <div class="container mx-auto px-4 text-center">
-            <div class="mb-6">
-                <span class="text-xl font-bold text-white tracking-wider">BAĞLAR MARKET</span>
-                <p class="text-sm mt-2 text-gray-500">Sizin ailə marketiniz.</p>
+    <!-- 4. HƏFTƏLİK KAMPANİYALAR HİSSƏSİ -->
+    <section id="kampaniyalar" class="py-16 bg-emerald-50 border-y border-emerald-100 px-4">
+        <div class="container mx-auto max-w-5xl">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-10">
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <h2 class="text-3xl font-extrabold text-gray-900">Həftənin Özəl Endirimləri</h2>
+                    <p class="text-gray-600 text-sm">Hər həftə seçilmiş məhsullarda böyük endirimlər!</p>
+                </div>
+                <span class="bg-red-500 text-white text-xs font-bold px-4 py-2 rounded-lg shadow animate-bounce">
+                    ŞOK QİYMƏTLƏR!
+                </span>
             </div>
-            <div class="flex flex-col items-center space-y-3 mb-6">
-                <a href="tel:+994506293295" class="text-white hover:text-green-400 font-medium flex items-center space-x-2 transition">
-                    <i class="fas fa-phone-alt text-green-500"></i>
-                    <span class="text-lg">050-629-3295</span>
-                </a>
-                <p class="text-sm flex items-center space-x-2">
-                    <i class="fas fa-map-marker-alt text-red-500"></i>
-                    <span>Bakı şəhəri, Bağlar qəsəbəsi</span>
-                </p>
+
+            <!-- Kampaniya Kartları -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-5 rounded-2xl shadow-sm relative overflow-hidden border border-gray-100">
+                    <span class="absolute top-3 left-3 bg-red-100 text-red-600 font-bold text-xs px-2 py-1 rounded">-25%</span>
+                    <div class="text-center py-6 text-gray-300"><i class="fas fa-image text-4xl"></i></div>
+                    <h4 class="font-bold text-gray-800">Meyvə və Tərəvəz Günləri</h4>
+                    <p class="text-xs text-gray-500 mt-1">Bütün yerli məhsullara xüsisi endirimlər.</p>
+                </div>
+                <div class="bg-white p-5 rounded-2xl shadow-sm relative overflow-hidden border border-gray-100">
+                    <span class="absolute top-3 left-3 bg-red-100 text-red-600 font-bold text-xs px-2 py-1 rounded">-15%</span>
+                    <div class="text-center py-6 text-gray-300"><i class="fas fa-image text-4xl"></i></div>
+                    <h4 class="font-bold text-gray-800">Süd Məhsullarında Fürsət</h4>
+                    <p class="text-xs text-gray-500 mt-1">Kərə yağları və pendirlərdə şok qiymət.</p>
+                </div>
+                <div class="bg-white p-5 rounded-2xl shadow-sm relative overflow-hidden border border-gray-100">
+                    <span class="absolute top-3 left-3 bg-green-100 text-green-600 font-bold text-xs px-2 py-1 rounded">1+1</span>
+                    <div class="text-center py-6 text-gray-300"><i class="fas fa-image text-4xl"></i></div>
+                    <h4 class="font-bold text-gray-800">Təmizlik Məhsulları</h4>
+                    <p class="text-xs text-gray-500 mt-1">Yuyucu tozlar alana xüsusi hədiyyə xalları.</p>
+                </div>
             </div>
-            <hr class="border-gray-800 my-6">
-            <p class="text-xs text-gray-600">&copy; 2026 Bağlar Market. Bütün hüquqlar qorunur.</p>
         </div>
+    </section>
+
+    <!-- 5. HAQQIMIZDA (TƏRİFLƏYİCİ HİSSƏ) -->
+    <section id="haqqimizda" class="py-20 container mx-auto px-4 max-w-4xl text-center space-y-6">
+        <h2 class="text-3xl font-extrabold text-gray-900">Niyə Məhz Bağlar Market?</h2>
+        <div class="h-1 w-20 bg-green-600 mx-auto rounded"></div>
+        <p class="text-gray-600 leading-relaxed text-base md:text-lg">
+            Biz fəaliyyətə başladığımız ilk gündən bəri müştərilərimizin məmnuniyyətini hər şeydən üstün tuturuq. Rəflərimizdə yer alan hər bir məhsul ciddi keyfiyyət və təzəlik nəzarətindən keçir. Biz yerli istehsalçıları dəstəkləyir, sizə ən təbii məhsulları çatdırırıq. Təmizliyə, gigiyenaya və dürüst qiymət siyasətinə verdiyimiz önəm bizi bölgənin ən sevilən ailə marketinə çevirib. Bizə etibar etdiyiniz üçün təşəkkür edirik!
+        </p>
+    </section>
+
+    <!-- 6. İŞ SAATLARI VƏ ÜNVAN -->
+    <section id="elaqe" class="py-16 bg-gray-900 text-white px-4">
+        <div class="container mx-auto max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            
+            <!-- Sol: Məlumatlar -->
+            <div class="space-y-6">
+                <h2 class="text-3xl font-extrabold">Bizimlə Əlaqə & Ünvan</h2>
+                <p class="text-gray-400 text-sm">Hər hansı bir sualınız və ya sifarişiniz varsa, çəkinmədən bizə zəng edə bilərsiniz.</p>
+                
+                <div class="space-y-4 font-medium">
+                    <!-- YENİLƏNMİŞ İŞ SAATLARI -->
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-green-600/20 text-green-400 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-400">İş Saatları</p>
+                            <p class="text-sm md:text-base">Hər gün: 07:00 – 00:00</p>
+                        </div>
+                    </div>
+
+                    <a href="tel:+994506293295" class="flex items-center space-x-3 text-white hover:text-green-400 transition group">
+                        <div class="w-10 h-10 bg-green-600/20 text-green-400 rounded-lg flex items-center justify-center group-hover:bg-green-600 group-hover:text-white transition">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-400">Sifariş və Dəstək Xətti</p>
+                            <p class="text-lg font-bold tracking-tight">050-629-3295</p>
+                        </div>
+                    </a>
+
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-red-600/20 text-red-400 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-400">Mağazanın Ünvanı</p>
+                            <p class="text-sm md:text-base">Bakı şəhəri, Bilgəh qəsəbəsi (G3M4+9JQ)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sağ: CANLI GOOGLE MAPS XƏRİTƏSİ -->
+            <div class="bg-gray-800 p-6 rounded-2xl border border-gray-700 space-y-4">
+                <div class="flex items-center space-x-3 text-left">
+                    <div class="w-10 h-10 bg-green-600/20 text-green-400 rounded-lg flex items-center justify-center text-lg">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-base font-bold">Xəritədə Yerimiz</h3>
+                        <p class="text-gray-400 text-xs">Bilgəh, Azərbaycan</p>
+                    </div>
+                </div>
+                
+                <!-- Canlı İnteraktiv Xəritə (Plus Kod İnteqrasiyalı) -->
+                <div class="w-full h-64 rounded-xl overflow-hidden border border-gray-700 shadow-inner">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=G3M4%2B9JQ%20Bilgah&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                        class="w-full h-full border-0" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-black text-gray-600 py-6 text-center text-xs border-t border-gray-900">
+        <p>&copy; 2026 Bağlar Market. Bütün hüquqlar qorunur. Qiymətlər rəflərdə dəyişiklik göstərə bilər.</p>
     </footer>
 
 </body>
